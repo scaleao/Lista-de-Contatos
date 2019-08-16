@@ -1,0 +1,211 @@
+* {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  box-sizing: border-box;
+}
+
+body, html {
+  padding: 3px 3px 3px 3px;
+
+  font-family: "Lato", sans-serif;
+  font-size: 14pt;
+  text-align: right;
+
+  background-color: #969696;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  text-align: center;
+}
+
+.painel{
+  text-align: center;
+  border: 3px solid #767676;
+  background-color: #FFF;
+  margin: auto;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.text-left{
+  margin-top: 5px;
+  text-align: left;
+  font-size: 14px;
+}
+
+/*MENSAGEM DE NOTIFICAÇÃO-------------------------------------------------------*/
+
+.error ul{
+  color: #AF0505;
+  font-size: 12px;
+  text-align: left;
+  background-color: #EF6767;
+  border-radius: 6px;
+  margin: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 18px;
+}
+
+.sucess ul{
+  color: #009E07;
+  font-size: 12px;
+  text-align: left;
+  background-color: #93ff93;
+  border-radius: 6px;
+  margin: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 18px;
+}
+
+/*FORM--------------------------------------------------------------------------*/
+
+.text {
+  font-size: 12px;
+  width: 100%;
+  padding: 6px 14px;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.text-search {
+  font-size: 12px;
+  width: 100px;
+  padding: 6px 14px;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.buttom {
+  background-color: #4CAF50;
+  color: black;
+  border: 2px solid #4CAF50;
+  padding: 10px 24px;
+}
+
+.buttom:hover {
+  background-color: #2A8D30;
+  color: white;
+  cursor: pointer;
+}
+
+.buttom-search {
+  background-color: #4CAF50;
+  color: black;
+  border: 2px solid #4CAF50;
+  padding: 6px 14px;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.buttom-excluir{
+  background-color: #F00;
+  color: black;
+  border: 2px solid #F00;
+  padding: 6px 14px;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.buttom-simple{
+  background-color: #00F;
+  color: white;
+  border: 2px solid #00F;
+  padding: 6px 14px;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 10pt;
+}
+/*TABLE-------------------------------------------------------------------------*/
+
+.div-table{
+  background-color: #CCC;
+  overflow-x: auto;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #DDD;
+  padding: 8px;
+  font-size: 10pt;
+}
+
+#customers tr:nth-child(even){background-color: #FD6E6E;}
+
+#customers tr:hover {background-color: #DDD;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #111;
+  color: white;
+  font-size: 12pt;
+}
+
+/*RESPONSIVO--------------------------------------------------------------------*/
+
+/* Celular */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* Computador */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
