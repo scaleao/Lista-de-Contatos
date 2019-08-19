@@ -2,10 +2,10 @@
     require_once "../database/conexao.php";
     require_once "../functionUtil.php";
 
-    $nome = $_POST['nome'];
-    $dataN = $_POST['dataN'];
-    $telefone = $_POST['telefone'];
-    $email = $_POST['email'];
+    $nome = getPost("nome");
+    $dataN = getPost("dataN");
+    $telefone = getPost("telefone");
+    $email = getPost("email");
 
     $messages_error = "";
     $messages_sucess = "";
